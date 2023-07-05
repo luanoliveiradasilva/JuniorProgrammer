@@ -12,7 +12,7 @@ namespace Assets.Scripts
         private void LateUpdate()
         {
             // Offset the camera behind the player by adding to the player´s position
-            transform.position = player.transform.position + new Vector3(0, 7, -15);
+            transform.position = player.transform.position + new Vector3(32, 3, 6);
         }
 
     }

@@ -27,11 +27,13 @@ public class PlayerController : MonoBehaviour
 
         //Time.deltaTime explanation: https://docs.unity3d.com/ScriptReference/Time-deltaTime.html
         //Move the car direction forward with input vertical input.
-        transform.Translate(movePlayer * moveSpeedVeichle * Time.deltaTime * veticalInput);
+        //transform.Translate(movePlayer * moveSpeedVeichle * Time.deltaTime * veticalInput);
 
         //Move the car in direction up with rotate left and right.
-        transform.Rotate(moveVector * Time.deltaTime * turnSpeed * horizontalInput);
-        
+        //transform.Rotate(moveVector * Time.deltaTime * turnSpeed * horizontalInput);
+
+        //transform.Translate(Vector3.forward);
+        transform.Translate(1,0,0);
 
     }
 }

@@ -218,6 +218,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50.000004, y: -60.000004, z: 0}
+--- !u!1 &280380695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280380697}
+  - component: {fileID: 280380696}
+  m_Layer: 0
+  m_Name: AnimalPrefabsRandom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &280380696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280380695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c62b6580facce24ca59e44e2d8648b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 986010375639924143}
+  - {fileID: 2535620467831174185}
+  - {fileID: 5080120977061282348}
+--- !u!4 &280380697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280380695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19228709, y: -8.212557, z: 7.9339967}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425805626
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +505,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -842,8 +890,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Stag_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8990253022483371187, guid: 6eb8c64c01ded0f448491567b62de5fd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eb8c64c01ded0f448491567b62de5fd, type: 3}
+--- !u!1 &986010375639924143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 986010375450198903, guid: 6eb8c64c01ded0f448491567b62de5fd, type: 3}
+  m_PrefabInstance: {fileID: 986010375639924142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2535620467831174184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -899,8 +956,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog_BorderCollie_01
       objectReference: {fileID: 0}
+    - target: {fileID: 3545807839742068952, guid: 1054e401290778d40b96ae79df7e48a4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1054e401290778d40b96ae79df7e48a4, type: 3}
+--- !u!1 &2535620467831174185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2535620467839414417, guid: 1054e401290778d40b96ae79df7e48a4, type: 3}
+  m_PrefabInstance: {fileID: 2535620467831174184}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5080120977061282347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +974,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2987460736969892070, guid: a54d480c8733ed04cbc75ce5c3c4b82d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5080120976179118014, guid: a54d480c8733ed04cbc75ce5c3c4b82d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -958,3 +1028,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a54d480c8733ed04cbc75ce5c3c4b82d, type: 3}
+--- !u!1 &5080120977061282348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5080120976179352444, guid: a54d480c8733ed04cbc75ce5c3c4b82d, type: 3}
+  m_PrefabInstance: {fileID: 5080120977061282347}
+  m_PrefabAsset: {fileID: 0}

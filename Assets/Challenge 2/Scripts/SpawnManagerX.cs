@@ -10,8 +10,8 @@ namespace Assets.Challenge_2.Scripts
         private float spawnLimitXRight = 7;
         private float spawnPosY = 30;
 
-        private float startDelay = 1.0f;
-        private float spawnInterval = 4.0f;
+        private float startDelay = 3.0f;
+        private float spawnInterval = 5.0f;
 
         // Start is called before the first frame update
         void Start()
@@ -22,11 +22,14 @@ namespace Assets.Challenge_2.Scripts
         // Spawn random ball at random x position at top of play area
         void SpawnRandomBall()
         {
+
+            var ballRangePrefabs = Random.Range(0, ballPrefabs.Length);
+
             // Generate random ball index and random spawn position
             Vector3 spawnPos = new Vector3(Random.Range(spawnLimitXLeft, spawnLimitXRight), spawnPosY, 0);
 
             // instantiate ball at random spawn location
-            Instantiate(ballPrefabs[0], spawnPos, ballPrefabs[0].transform.rotation);
+            Instantiate(ballPrefabs[ballRangePrefabs], spawnPos, ballPrefabs[ballRangePrefabs].transform.rotation);
         }
 
     }

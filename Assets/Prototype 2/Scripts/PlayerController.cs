@@ -30,6 +30,7 @@ namespace Assets.Prototype_2.Scripts
             }
 
             horizontalInput = Input.GetAxis("Horizontal");
+
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime * horizontalInput);
 
             if (Input.GetKeyDown(KeyCode.Space))

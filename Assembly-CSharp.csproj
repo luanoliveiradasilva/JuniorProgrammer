@@ -63,6 +63,7 @@
     <Compile Include="Assets\Prototype 3\Scripts\SpawnManager.cs" />
     <Compile Include="Assets\Prototype 1\Scripts\MoveForward.cs" />
     <Compile Include="Assets\Prototype 1\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Prototype 3\Scripts\RepeatBackground.cs" />
     <Compile Include="Assets\Prototype 3\Scripts\MoveLeft.cs" />
     <Compile Include="Assets\Prototype 1\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Challenge 2\Scripts\SpawnManagerX.cs" />

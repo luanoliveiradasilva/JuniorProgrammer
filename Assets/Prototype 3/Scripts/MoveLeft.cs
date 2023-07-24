@@ -22,10 +22,10 @@ namespace Assets.Prototype_3.Scripts
                 transform.Translate(Vector3.left * Time.deltaTime * speed);
             }
 
-            // if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
-            //{
-            // Destroy(gameObject);
-            //}
+            if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
+            {
+             Destroy(gameObject);
+            }
         }
     }
 }
